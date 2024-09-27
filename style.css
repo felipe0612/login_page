@@ -9,16 +9,28 @@
 body {
   margin: 0;
   padding: 0;
-  color: #222222;
-  background-color: #f2f2f0d4;
+  height: 100vh; /* Define a altura do body como 100% da viewport */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
   background-color: #5D0A90;
   background-image: url("../images/cover.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  padding: 20px;
-  overflow-x: hidden;
+}
+
+.form-container {
+  max-width: 450px;
+  width: 100vh;
+}
+
+.form-body {
+  background-color: #2e044861;
+  padding: 50px;
+  color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 body,
@@ -28,13 +40,21 @@ button {
   outline: none;
 }
 img{
+  padding: 10px;
   height: 100px;
   width: 100px;
-  margin-left: 175px;
+
 }
 .main-container {
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
+ 
+}
+
+._or{
+  padding-bottom: 5%;
+  align-items: center;
 }
 
 a {
@@ -47,42 +67,23 @@ a:hover {
   text-decoration: underline;
 }
 
-.form-container {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-.form-body {
-  background-color: #2e044861;
-  overflow: hidden;
-  padding: 50px;
-  color: #ffffff;
-  border-radius: 3px;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-@media only screen and (max-width: 500px) {
-  .form-body {
-    padding: 50px 40px;
-  }
-}
-
-@media only screen and (max-width: 455px) {
-  .form-body {
-    padding: 45px 30px;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .form-body {
-    padding: 30px 20px;
-  }
-}
 
 .form-body .title {
   margin: 0;
   text-align: center;
   font-weight: normal;
+}
+
+.the-form [type="submit"] {
+  background: #f1c043;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  font-size: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: black;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .social-login ul {
